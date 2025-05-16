@@ -49,7 +49,7 @@ const Navbar = () => {
               <li>
                 <NavLink 
                   to="/blogs" 
-                  className={({ isActive }) => isActive ? "active py-4" : "py-4"}
+                  className={({ isActive }) => `${isActive ? "active" : ""} py-2 hover:bg-amber-400 px-2 rounded-full cursor-pointer transition-colors duration-200`}
                   onClick={() => window.scrollTo(0,0)}
                 >
                   Blogs
@@ -59,7 +59,7 @@ const Navbar = () => {
               <li>
                 <NavLink 
                   to="/places" 
-                  className={({ isActive }) => isActive ? "active py-4" : "py-4"}
+                  className={({ isActive }) =>  `${isActive ? "active" : ""} py-2 hover:bg-amber-400 px-2 rounded-full cursor-pointer transition-colors duration-200`}
                   onClick={() => window.scrollTo(0,0)}
                 >
                   Destinos
@@ -69,7 +69,7 @@ const Navbar = () => {
               <li>
                 <NavLink 
                   to="/about" 
-                  className={({ isActive }) => isActive ? "active py-4" : "py-4"}
+                  className={({ isActive }) => `${isActive ? "active" : ""} py-2 hover:bg-amber-400 px-2 rounded-full cursor-pointer transition-colors duration-200`}
                   onClick={() => window.scrollTo(0,0)}
                 >
                   About
