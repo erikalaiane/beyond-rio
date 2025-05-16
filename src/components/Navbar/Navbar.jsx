@@ -102,8 +102,8 @@ const Navbar = () => {
           {/*botão agende agora*/}
           <div className="flex items-center gap-4">
             <button
-            className="bg-gradient-to-r from-blue-950 to-blue-400 hover:bg-gradient-to-r hover:from-blue-400 hover:blue-950 transition-all duration-700 text-white px-3 py-1 rounded-full cursor-pointer"
-            >Agende Agora
+            className="bg-gradient-to-r from-gray-700 to-blue-900 hover:bg-gradient-to-r hover:from-blue-800/65 hover:blue-950 transition-all duration-700 text-white px-3 py-1 rounded-full cursor-pointer">
+              Agende Agora
             </button>
             
             {/*Mobile Hamburguer Menu*/}

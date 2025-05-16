@@ -40,7 +40,7 @@ const ResponsiveMenu = ({showMenu, setShowMenu}) => {
                        <li>
                             <Link
                             to={link}
-                            onClick={() => setShowMenu(false)} className="mb-5 inline-block"
+                            onClick={() => setShowMenu(false)} className="mb-5 inline-block hover:bg-green-900/75 transition-all duration-700 hover:text-white px-4 py-1 rounded-full cursor-pointer"
                             >{name}</Link>
                        </li>
                     ))
