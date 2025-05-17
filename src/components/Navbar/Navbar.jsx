@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-     <div className="fixed top-0 right-0 w-full bg-amber-100 text-black shadow-md font-medium">
+     <div className="fixed top-0 right-0 w-full bg-amber-100 text-black shadow-md z-[99999] font-medium">
       <div className="container">
         
       </div>
