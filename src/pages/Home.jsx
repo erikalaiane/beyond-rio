@@ -2,6 +2,8 @@ import React from 'react'
 import MainVid from "../assets/main.mp4";
 import Hero from '../components/Hero/Hero';
 import Locais from '../components/Locais/Locais';
+import BannerImg from '../components/BannerImg/BannerImg'
+import Poster from '../assets/travel-cover.png'
 
 function Home() {
   return (
@@ -19,6 +21,7 @@ function Home() {
           <Hero />
         </div>
         <Locais />
+        <BannerImg img={Poster}/>
       </div>
     </>
   )

@@ -1,5 +1,5 @@
 import React from 'react'
-import LocaisCard from './LocaisCard';
+import LocaisCard from "./LocaisCard";
 import Img1 from "../../assets/locais/Img1.jpg";
 import Img2 from "../../assets/locais/Img2.jpg";
 import Img3 from "../../assets/locais/Img3.jpg";
@@ -22,7 +22,7 @@ const LocaisData = [
 {
   img: Img2,
   title: "Visita ao Cristo Redentor",
-  location: "Cristo Redentor - RJ",
+  location: "Corcovado - RJ",
   description: "Conheça uma das sete maravilhas do mundo moderno e admire a vista espetacular do Corcovado.",
   price: 128,
   type: "Monumento",
@@ -38,7 +38,7 @@ const LocaisData = [
 {
   img: Img4,
   title: "Museu do Amanhã",
-  location: "Museu do Amanhã - RJ",
+  location: "Praça Mauá - RJ",
   description: "Conheça o museu de ciência focado em sustentabilidade e futuro da humanidade, com exposições interativas.",
   price: 30,
   type: "Museu de Ciência",
@@ -87,11 +87,11 @@ const LocaisData = [
 
 const Locais = () => {
   return (
-    <div className="bg-gray-50 py-10 mt-1 ml-10">
+    <div className="bg-gray-50 py-10 mt-1 ml-10 mr-10">
         <div className="container">
             <h1 className="my-8 border-l-8 border-amber-500/50 py-2 pl-2 text-3xl font-bold"
             >Melhores Locais para Visitar</h1>
-            <div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {
                 LocaisData.map((item, index) => (
                   <LocaisCard key={index}
