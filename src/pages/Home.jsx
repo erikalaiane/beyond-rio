@@ -6,14 +6,14 @@ function Home() {
   return (
     <>
       <div>
-        <div className='relative h-[600px]'>
+        <div className='relative h-[595px]'>
           <video 
            autoPlay loop muted
-           className="absolute right-0 top-10 h-[560px] w-full object-cover z-[-1]">
+           className="absolute right-0 top-9 h-[560px] w-full object-cover z-[-1]">
 
             <source src={MainVid} type="video/mp4"/>
           </video>
-          
+             
           <Hero />
         </div>
       </div>

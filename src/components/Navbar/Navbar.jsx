@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className='container py-3 sm:py-0'>
         <div className='flex justify-between items-center'>
           {/*logo section*/}
-          <div>
+          <div className='pl-5'>
             <Link to="/" onClick={() => window.scrollTo(0,0)}>
               <img src={LogoImg} alt="Logo" className='h-16'/>
             </Link>
