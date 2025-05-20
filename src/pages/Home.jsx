@@ -2,9 +2,11 @@ import React from 'react'
 import MainVid from "../assets/main.mp4";
 import Hero from '../components/Hero/Hero';
 import Locais from '../components/Locais/Locais';
-import BannerImg from '../components/BannerImg/BannerImg'
-import Poster from '../assets/travel-cover.png'
-import Blogs from "../pages/Blogs"
+import BannerImg from '../components/BannerImg/BannerImg';
+import Poster from '../assets/travel-cover.png';
+import Banner2 from "../assets/cover2.jpg";
+import Blogs from "../pages/Blogs";
+import Banner from "../components/Banner/Banner";
 
 function Home() {
   return (
@@ -24,6 +26,8 @@ function Home() {
         <Locais />
         <BannerImg img={Poster}/>
         <Blogs />
+        <Banner />
+        <BannerImg img={Banner2} className="object-cover object-bottom" />
       </div>
     </>
   )
