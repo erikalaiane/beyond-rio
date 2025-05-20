@@ -4,6 +4,7 @@ import Hero from '../components/Hero/Hero';
 import Locais from '../components/Locais/Locais';
 import BannerImg from '../components/BannerImg/BannerImg'
 import Poster from '../assets/travel-cover.png'
+import Blogs from "../pages/Blogs"
 
 function Home() {
   return (
@@ -22,6 +23,7 @@ function Home() {
         </div>
         <Locais />
         <BannerImg img={Poster}/>
+        <Blogs />
       </div>
     </>
   )
