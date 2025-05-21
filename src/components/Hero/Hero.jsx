@@ -13,80 +13,86 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-black/20 h-full">
-      <div className="h-full flex justify-center items-center p-4 bg-blue-950/10">
-        <div className="container grid grid-cols-1 gap-4">
-          {/* Text Content section */}
-          <div className="text-white">
-            <p data-aos="fade-up">Nossos Pacotes</p>
-            <p data-aos="fade-up" data-aos-delay="300" className="font-bold text-3xl">
-              Pesquise seu Destino
-            </p>
-          </div>
+    <section className="relative h-screen w-full overflow-hidden">
 
-          {/* Form Section */}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="600"
-            className="space-y-4 bg-amber-50 rounded-md p-4 relative"
-          >
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-3">
-              <div>
-                <label htmlFor="destination" className="opacity-70">
-                  Pesquise seu Destino
-                </label>
-                <input
-                  type="text"
-                  name="destination"
-                  id="destination"
-                  placeholder="Cristo Redentor"
-                  className="w-full bg-gray-300 my-2 outline-gray-500 outline focus:outline-amber-600 rounded-full p-2"
-                />
-              </div>
+      {/* Overlay escuro para dar contraste */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60"></div>
 
-              <div>
-                <label htmlFor="date" className="opacity-70">
-                  Data
-                </label>
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  className="w-full bg-gray-300 my-2 focus:outline-amber-600 outline outline-gray-500 rounded-full p-2"
-                />
-              </div>
+      {/* Conteúdo da hero */}
+      <div className="relative z-10 flex flex-col justify-center items-center h-full px-6 max-w-5xl mx-auto text-center">
+        <p 
+          data-aos="fade-up" 
+          className="text-amber-400 text-lg tracking-widest uppercase mb-2 font-semibold"
+        >
+          Nossos Pacotes
+        </p>
+        <h1 
+          data-aos="fade-up" 
+          data-aos-delay="300" 
+          className="text-white text-5xl sm:text-6xl font-extrabold leading-tight mb-8"
+        >
+          Pesquise seu Destino
+        </h1>
 
-              <div>
-                <label htmlFor="price" className="opacity-70 block">
-                  <div className="w-full flex justify-between items-center">
-                    <p>Preço Máximo</p>
-                    <p className="font-bold text-xl">${priceValue}</p>
-                  </div>
-                </label>
-                <div className="bg-gray-300 rounded-full p-2 flex items-center justify-center">
-                  <input
-                    type="range"
-                    name="price"
-                    id="price"
-                    className="appearance-none w-full bg-gradient-to-r from-blue-950 to-blue-600 h-2 rounded-full my-2"
-                    min="0"
-                    max="300"
-                    value={priceValue}
-                    step="10"
-                    onChange={(e) => setPriceValue(e.target.value)}
-                  />
-                </div>
-              </div>
+        <form
+          data-aos="fade-up"
+          data-aos-delay="600"
+          className="w-full sm:w-auto bg-white/90 backdrop-blur-md rounded-3xl p-8 shadow-lg max-w-3xl"
+          onSubmit={(e) => e.preventDefault()}
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div>
+              <label htmlFor="destination" className="block text-gray-700 font-medium mb-1">
+                Destino
+              </label>
+              <input
+                type="text"
+                id="destination"
+                placeholder="Cristo Redentor"
+                className="w-full rounded-full border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition"
+              />
             </div>
 
-            {/* botão */}
-            <button className="bg-gradient-to-r from-blue-950 to-blue-600 text-white hover:scale-105 px-4 py-2 rounded-full duration-200 absolute -bottom-5 left-1/2 -translate-x-1/2">
-              Pesquise Agora
-            </button>
+            <div>
+              <label htmlFor="date" className="block text-gray-700 font-medium mb-1">
+                Data
+              </label>
+              <input
+                type="date"
+                id="date"
+                className="w-full rounded-full border border-gray-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition"
+              />
+            </div>
+
+            <div>
+              <label htmlFor="price" className="block text-gray-700 font-medium mb-1">
+                <div className="flex justify-between items-center mb-1">
+                  <span>Preço Máximo</span>
+                  <span className="font-semibold text-amber-600">${priceValue}</span>
+                </div>
+              </label>
+              <input
+                type="range"
+                id="price"
+                min="0"
+                max="300"
+                step="10"
+                value={priceValue}
+                onChange={(e) => setPriceValue(e.target.value)}
+                className="w-full h-2 rounded-full accent-amber-400"
+              />
+            </div>
           </div>
-        </div>
+
+          <button
+            type="submit"
+            className="mt-8 w-full sm:w-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
+          >
+            Pesquise Agora
+          </button>
+        </form>
       </div>
-    </div>
+    </section>
   );
 };
 

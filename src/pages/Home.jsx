@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import MainVid from "../assets/main.mp4";
 import Hero from '../components/Hero/Hero';
 import Locais from '../components/Locais/Locais';
@@ -7,6 +7,7 @@ import Poster from '../assets/travel-cover.png';
 import Banner2 from "../assets/cover2.jpg";
 import Blogs from "../pages/Blogs";
 import Banner from "../components/Banner/Banner";
+import Testimonial from "../components/Testimonial/Testimonial.jsx";
 
 function Home() {
   return (
@@ -28,9 +29,10 @@ function Home() {
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} className="object-cover object-bottom" />
+        <Testimonial /> 
       </div>
     </>
-  )
+  );
 };
 
 export default Home;
