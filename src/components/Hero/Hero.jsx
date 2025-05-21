@@ -38,11 +38,12 @@ const Hero = () => {
         </h1>
 
         <form
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="w-full bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-lg max-w-4xl mx-auto"
-          onSubmit={(e) => e.preventDefault()}
-        >
+  data-aos="fade-up"
+  data-aos-delay="600"
+  className="w-full bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-lg max-w-4xl mx-auto text-center sm:text-center"
+  onSubmit={(e) => e.preventDefault()}
+>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div>
               <label htmlFor="destination" className="block text-gray-700 font-medium mb-1">
@@ -89,7 +90,7 @@ const Hero = () => {
 
           <button
             type="submit"
-            className="mt-8 w-full sm:w-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
+            className="mt-8 w-full sm:w-auto sm:mx-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             Pesquise Agora
           </button>
