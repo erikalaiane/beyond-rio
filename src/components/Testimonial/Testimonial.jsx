@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Person1 from "../../assets/person1.jpg";
 import Person2 from "../../assets/person2.jpg";
 import Person3 from "../../assets/person3.jpg";
+import Person4 from "../../assets/person4.jpg";
+import Person5 from "../../assets/person5.jpg";
 
 const TestimonialData = [
   {
@@ -26,6 +28,18 @@ const TestimonialData = [
     text: "Confesso que estava com receio de viajar sozinho, mas com essa equipe maravilhosa eu não fiquei nem um minuto desconfortável. Fiz amizades, me diverti, e vivi dias incríveis no Rio. Recomendo de olhos fechados!",
     img: Person3,
   },
+  {
+  id: 4,
+  name: "Marina",
+  text: "Nunca imaginei que fosse me apaixonar tanto por uma cidade em tão pouco tempo. Cada passeio parecia pensado especialmente pra mim. A equipe foi atenciosa, animada e super organizada. Já estou planejando o próximo destino com eles!",
+  img: Person4,
+},
+{
+  id: 5,
+  name: "Samuel",
+  text: "Viajar com essa agência foi, sem dúvida, uma das melhores decisões que já tomei. O roteiro foi equilibrado entre aventura e descanso, e o clima entre os viajantes era incrível. Me senti parte de uma grande família.",
+  img: Person5,
+},
 ];
 
 const Testimonial = () => {
