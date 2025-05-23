@@ -20,11 +20,11 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/60 z-0"></div>
 
       {/* Conteúdo central */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 flex flex-col justify-center min-h-screen sm:py-0">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-20 flex flex-col justify-center min-h-screen sm:py-20">
 
         <p 
           data-aos="fade-up" 
-          className="text-amber-400 text-sm sm:text-lg tracking-widest uppercase mb-2 font-semibold text-center"
+          className="text-amber-400 text-sm sm:text-lg tracking-widest uppercase mb-1 font-semibold text-center"
         >
           Nossos Pacotes
         </p>
@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 
           data-aos="fade-up" 
           data-aos-delay="300" 
-          className="text-white text-4xl sm:text-6xl font-extrabold leading-tight mb-6 text-center"
+          className="text-white text-4xl sm:text-6xl font-extrabold leading-tight mb-3 text-center"
         >
           Pesquise seu Destino
         </h1>
@@ -40,7 +40,7 @@ const Hero = () => {
         <form
   data-aos="fade-up"
   data-aos-delay="600"
-  className="w-full bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-8 shadow-lg max-w-4xl mx-auto text-center sm:text-center"
+  className="w-full bg-white/90 backdrop-blur-md rounded-3xl p-4 sm:p-6 shadow-lg max-w-4xl mx-auto text-center"
   onSubmit={(e) => e.preventDefault()}
 >
 
@@ -90,7 +90,7 @@ const Hero = () => {
 
           <button
             type="submit"
-            className="cursor-pointer mt-8 w-full sm:w-auto sm:mx-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
+            className="cursor mt-8 w-full sm:w-auto sm:mx-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             Pesquise Agora
           </button>
