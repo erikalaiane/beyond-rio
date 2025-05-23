@@ -11,7 +11,7 @@ const dropdownLinks = [
   { name: "Destinos", link: "/#locais" }
 ];
 
-const Navbar = () => {
+const Navbar = ({handleOrderPopup}) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => setShowMenu(!showMenu);
@@ -104,7 +104,9 @@ const Navbar = () => {
 
         {/* Right Side - Button + Mobile Hamburger */}
         <div className="flex items-center gap-4">
-          <button className="bg-gradient-to-r from-gray-600 to-blue-900 hover:from-amber-600 hover:to-amber-400 text-white px-5 py-2 rounded-full shadow-md transition duration-300 font-semibold select-none">
+          <button 
+          onClick={() => handleOrderPopup()}
+          className="bg-gradient-to-r from-gray-600 to-blue-900 hover:from-amber-600 hover:to-amber-400 text-white px-5 py-2 rounded-full shadow-md transition duration-300 font-semibold select-none cursor-pointer">
             Agende Agora
           </button>
 

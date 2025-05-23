@@ -90,7 +90,7 @@ const Hero = () => {
 
           <button
             type="submit"
-            className="mt-8 w-full sm:w-auto sm:mx-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
+            className="cursor-pointer mt-8 w-full sm:w-auto sm:mx-auto bg-amber-500 hover:bg-blue-950 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition transform hover:scale-105"
           >
             Pesquise Agora
           </button>

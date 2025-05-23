@@ -85,7 +85,7 @@ const LocaisData = [
   },
 ];
 
-const Locais = () => {
+const Locais = ({handleOrderPopup}) => {
   return (
     <div className="bg-gray-50 py-10 mt-1 mx-10">
       <div className="container mx-auto px-4">
@@ -94,7 +94,7 @@ const Locais = () => {
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {LocaisData.map((item, index) => (
-            <LocaisCard key={index} {...item} />
+            <LocaisCard handleOrderPopup={handleOrderPopup} key={index} {...item} />
           ))}
         </div>
       </div>

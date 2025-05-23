@@ -8,8 +8,15 @@ import Banner2 from "../assets/cover2.jpg";
 import Blogs from "../pages/Blogs";
 import Banner from "../components/Banner/Banner";
 import Testimonial from "../components/Testimonial/Testimonial.jsx";
+import Popup from '../components/Popup/Popup.jsx';
 
-function Home() {
+const Home = () => {
+  const [orderPopup, setOrderPopup] = React.useState(false);
+
+  const handleOrderPopup = () => {
+    setOrderPopup(!orderPopup);
+  };
+
   return (
     <>
       <div>
@@ -24,12 +31,13 @@ function Home() {
           </video>
           <Hero />
         </div>
-        <Locais />
+        <Locais handleOrderPopup={handleOrderPopup} />
         <BannerImg img={Poster}/>
         <Blogs />
         <Banner />
         <BannerImg img={Banner2} className="object-cover object-bottom" />
         <Testimonial /> 
+        <Popup orderPopup={orderPopup} setOrderPopup={setOrderPopup}/>
       </div>
     </>
   );
