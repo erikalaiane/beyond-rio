@@ -6,9 +6,9 @@ import { IoFastFoodSharp } from 'react-icons/io5';
 
 const Banner = () => {
   return (
-    <div className="bg-blue-950/5 py-16">
+    <div className="bg-blue-950/5 py-5">
       <div className="container">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           {/* Seção de Imagem */}
           <div>
             <img
