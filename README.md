@@ -59,8 +59,13 @@ npm install
 # Rode o projeto localmente
 npm run dev
 
-✨ Autor
+ ``` 
+ ✨ Autor
 Desenvolvido com carinho por Érika Laiane 💙
 
-🔗 GitHub
-🔗 LinkedIn
+✨ Autor
+
+Desenvolvido com carinho por **Érika Laiane** 💙
+
+🔗 [GitHub](https://github.com/erikalaiane)  
+🔗 [LinkedIn](https://www.linkedin.com/in/%C3%A9rika-laiane-azevedo/)
