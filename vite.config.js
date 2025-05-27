@@ -1,8 +1,11 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// Detectar ambiente Netlify (process.env.NETLIFY) ou GitHub Pages
+const isNetlify = process.env.NETLIFY === 'true'
+
 export default defineConfig({
-  base: '/beyond-rio/',
+  base: isNetlify ? '/' : '/beyond-rio/',
   plugins: [react()]
 })
