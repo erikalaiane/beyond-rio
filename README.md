@@ -60,8 +60,8 @@ npm install
 npm run dev
 
 
-✨ Autor
-Desenvolvido com carinho por Erika Laiane 💙
+## ✨ Autor
 
-🔗 GitHub
-🔗 LinkedIn
+Desenvolvido com carinho por **Erika Laiane** 💙  
+🔗 [GitHub](https://github.com/erikalaiane)  
+🔗 [LinkedIn](https://www.linkedin.com/in/%C3%A9rika-laiane-azevedo/)
