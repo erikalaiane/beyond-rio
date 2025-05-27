@@ -59,8 +59,8 @@ npm install
 # Rode o projeto localmente
 npm run dev
 
+---
 
-```markdown
 ✨ Autor
 
 Desenvolvido com carinho por **Érika Laiane** 💙
