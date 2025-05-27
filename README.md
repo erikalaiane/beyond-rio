@@ -32,8 +32,8 @@ Na seção principal (hero), os visitantes podem simular uma viagem escolhendo o
 
 ## 📸 Capturas de Tela
 
-![Home](src/assets/hero-img.png)
-![Destinos](src/assets/dest-img.png)
+![Home](src/assets/hero-img.png)  
+![Destinos](src/assets/dest-img.png)  
 ![Blog](src/assets/blog-img.png)
 
 ---
@@ -59,11 +59,8 @@ npm install
 # Rode o projeto localmente
 npm run dev
 
----
-
 ✨ Autor
+Desenvolvido com carinho por Érika Laiane 💙
 
-Desenvolvido com carinho por **Érika Laiane** 💙
-
-🔗 [GitHub](https://github.com/erikalaiane)  
-🔗 [LinkedIn](https://www.linkedin.com/in/%C3%A9rika-laiane-azevedo/)
+🔗 GitHub
+🔗 LinkedIn
