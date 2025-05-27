@@ -60,6 +60,7 @@ npm install
 npm run dev
 
 
+```markdown
 ✨ Autor
 
 Desenvolvido com carinho por **Érika Laiane** 💙
