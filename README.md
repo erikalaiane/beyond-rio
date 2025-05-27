@@ -60,9 +60,6 @@ npm install
 npm run dev
 
  ``` 
- ✨ Autor
-Desenvolvido com carinho por Érika Laiane 💙
-
 ✨ Autor
 
 Desenvolvido com carinho por **Érika Laiane** 💙
