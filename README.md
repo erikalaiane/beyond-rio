@@ -61,7 +61,8 @@ npm run dev
 
 
 ✨ Autor
-Desenvolvido com carinho por Erika Laiane 💙
 
-🔗 [GitHub](https://github.com/erikalaiane)
-🔗 [LinkedIn](www.linkedin.com/in/érika-laiane-azevedo)
+Desenvolvido com carinho por **Érika Laiane** 💙
+
+🔗 [GitHub](https://github.com/erikalaiane)  
+🔗 [LinkedIn](https://www.linkedin.com/in/%C3%A9rika-laiane-azevedo/)
